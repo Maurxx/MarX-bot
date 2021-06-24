@@ -1,0 +1,43 @@
+{
+    "name": "Discord-MusicBot",
+    "description": "Very simple discord music bot with the discord.js with Song Name playing. It can able to play music with the song name",
+    "repository": "https://github.com/SudhanPlayz/Discord-MusicBot",
+    "logo": "https://cdn.discordapp.com/avatars/750613142488481843/e6326038dbe2243ca551ba5b6ecd8bf2.png?size=1024",
+    "keywords": ["node", "discord", "youtube", "music", "bot", "lavalink", "dashboard"],
+    "image": "heroku/nodejs",
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        }
+    ],
+  "env": {
+    "Prefix": {
+      "description": "The discord bot prefix",
+      "required": "true"
+    },      
+    "Token": {
+      "description": "The discord bot token",
+      "required": "true"
+    },
+    "Discord_ClientID": {
+      "description": "The discord bot ClientID",
+      "required": "true"
+    },
+    "Discord_ClientSecret": {
+      "description": "The discord bot ClientSecret",
+      "required": "true"
+    },
+    "Website": {
+      "description": "URL of your webserver (Example: https://domain.xyz)",
+      "value": ""
+    },
+    "Spotify_ClientID": {
+      "description": "Spotify ClientID",
+      "required": "true"
+    },
+    "Spotify_ClientSecret": {
+      "description": "Spotify ClientSecret",
+      "required": "true"
+    }
+  }
+}
